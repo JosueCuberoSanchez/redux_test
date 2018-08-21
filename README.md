@@ -1,6 +1,15 @@
-# Tinder app
+# Redux test
 
-Tinder alike app made with React.
+Redux test.
+
+Redux resume:
+1. My code calls an action creator.
+2. The action creator will do things like fetch from an API and return an object composed of
+an action type and a payload.
+3. When the action creator returns that object, the reducers will be triggered to find out
+which type of action is going on, and modify the state as needed.
+4. When the state of the application is modified, all the containers (components connected to redux)
+will be notified and re rendered.
 
 ## Getting Started
 
@@ -16,7 +25,7 @@ Your favorite editor!
 
 In order to install you should run the following commands:
 
-git clone https://github.com/JosueCuberoSanchez/tinder_app.git
+git clone https://github.com/JosueCuberoSanchez/redux_test.git
 
 cd [generated-directory]
 

@@ -1,13 +1,12 @@
 {
-  "name": "tinder_app",
+  "name": "redux_test",
   "version": "1.0.0",
-  "description": "Tinder alike app.",
+  "description": "Redux test app.",
   "main": "index.js",
   "repository": "https://github.com/JosueCuberoSanchez/tinder_app.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --inline --mode development"
   },
   "author": "Josué David Cubero Sánchez",
   "license": "ISC",
@@ -21,8 +20,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "webpack": "^1.15.0",
-    "webpack-dev-server": "^1.14.0",
-    "youtube-api-search": "0.0.5"
+    "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
